@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+          
+        
+        .top{
+            width:100%;
+            display:flex;
+            background-color: #2b97a2;
+            color:white;
+            padding:25px
+        }
+        .top1{
+            width:50%;
+            display:flex;
+            align-items: center;
+            justify-content: end;
+            margin-top:15px;
+            margin-right:80px
+            
+        }
+        .top2{
+            width:50%;
+            margin-top:10px;
+            margin-right:20px;
+            padding-right:20px;
+            gap:10px
+        }
+        .bt{
+            background-color: azure;
+            padding:20px 60px;
+            padding-top: 20px;
+            text-decoration: none;
+            color:black;
+            font-size: 15px;
+            
+        }
+        .btn{
+            padding:20px 20px;
+            border-radius: 8px;
+            color:white;
+            background-color: black;
+            text-decoration: none;
+            padding-right:20px
+
+        }
+        .btna{
+            padding-left: 20px;
+        }
+        .nav{
+            width:100%;
+            display: flex;
+            background-color: aliceblue;
+
+            padding:30px
+
+        }
+        .nav1{
+            width:50%;
+            display:flex;
+           align-items: center;
+            
+            justify-content: start;
+            gap:25px;
+            
+        }
+        .nav2{
+             display:flex;
+           align-items: center;
+            
+            justify-content: start;
+            color:rgb(48, 39, 39);
+            gap:25px;
+            padding-left:100px
+        }
+        .link{
+            font-weight: bold;
+            font-size: 20px;
+            text-decoration: none;
+
+        }
+        .list{
+            list-style: none;
+            font-size: 20px;
+            margin:10px
+
+        }
+        .things{
+            display: flex;
+        }
+        .log{
+            background-color:rgb(84, 122, 27);
+            color:white;
+            text-decoration: none;
+            padding:20px 20px;
+            border-radius: 8px;
+
+        }
+        .btna{
+            display:flex;
+            gap:15px
+        }
+        .main{
+            display:flex;
+            width:100%;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .main1{
+            width:50%;
+            
+             align-items: center;
+            justify-content: center;
+            padding-left:80px;
+            padding-top:40px;
+            
+            color:black
+            
+        }
+        .main1 h1{
+            font-size: 80px;
+            font-weight:bold;
+
+        }
+        .main2{
+            width:50%;
+            
+        }
+        .wt{
+            text-decoration: none;
+            padding:20px 30px;
+            background-color: rgb(74, 146, 74);
+            color:white;
+            border-radius: 8px;
+        }
+        .bk{
+             text-decoration: none;
+            padding:20px 30px;
+            background-color:#2b97a2;
+            color:white;
+            border-radius:8px;
+
+        }
+        form{
+            display:flex;
+            gap:10px
+        }
+        .line{
+            width:100%;
+            background-color: white;
+            padding-top:60px;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-weight: 20px;
+            color:#747373;
+
+        }
+         
+         .fifo_box {
+      display: flex;
+      width:100%;
+      justify-content: center;
+      align-items: center;
+      gap:20px;
+      margin-top:25px
+    }
+
+
+    .my_fifo{
+        width:20%;
+        height:450px;
+        padding:20px;
+        border: 1px solid black;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px  #2b97a2;
+    }
+    .cont{
+        
+        padding-top:15px;
+        
+        font-size: 20px;
+
+    }
+    .head{
+        margin-top:30px;
+        width:100%;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .col{
+        width:100%;
+        display:flex;
+        margin-top: 40px;
+        
+    }
+    .col1{
+        width:50%;
+    }
+    .col2{
+        width:50%
+    }
+    .col3{
+        padding:15px;
+        font-size: 20px;
+
+    }
+    .row{
+        width:100%;
+        display:flex;
+        padding:20px
+    }
+    .row1{
+        width:50%
+    }
+    .row2{
+        width:50%
+    }
+    .col4{
+        padding:30px 100px;
+        background-color: rgb(100, 147, 29);
+        text-decoration: none;
+        color:white;
+        border-radius: 8px;
+        
+    }
+    .next{
+        width:100%;
+        display:flex;
+        padding:20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .next1{
+        width:50%
+    }
+    .next2{
+        width:50%;
+        align-items: center;
+        padding-left:150px
+    }
+    .call{
+        width:70%;
+        height:250px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+        border: 1px solid black;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.54);
+        margin-left: auto;
+        margin-right:auto ;
+        margin-top:80px
+    }
+    .call h5{
+        padding-top:50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .back{
+        padding:20px 70px;
+        background-color:   #2b97a2;
+        text-decoration: none;
+        border-radius: 8px;
+        color:white;
+        font-weight: bold;
+        font-size: 20px;
+        
+        
+    }
+    .report{
+        display:flex;
+        width:100%;
+        margin-top:100px
+
+    }
+    .report1{
+        width:33.33%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:start;
+        
+    }
+    .report2{
+        width:33.33%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+
+    }
+    .report3{
+        width:33.33%;
+        flex-direction: column;
+        align-items: center;
+        justify-content:end;
+    }
+    .ful{
+        padding:20px;
+        text-decoration: none;
+        
+    }
+    .food{
+        padding:5px;
+        
+    }
+    .cloud{
+        background-color: #2b97a2;
+        margin-bottom:20px;
+        padding:20px 50px;
+        color:white;
+        border-radius: none;
+        text-decoration: none;
+        border-radius: 8px;
+    
+    }
+    .last{
+        
+        width:100%;
+        
+        background-color: rgb(0, 0, 0);
+        color:white;
+        margin-top: 80px;
+         padding:40px 80px;
+    }
+      .lg{
+        height:350px;
+        width:100%;
+        padding:20px;
+        background-color: black;
+        color:white;
+        margin-top:60px
+      }   
+        
+    
+    .lg1{
+      height:70%;
+      width:100%;
+      display:flex;
+      padding-left:80px;
+    
+      
+    }
+    .lg2{
+      height:30%;
+      width:100%
+    }
+    .lk{
+      height:100%;
+      width:20%;
+    }
+   button :hover{
+        color:pink
+    }
+    ::selection{
+        color:aqua
+    }
+        
+
+
+    
+        
+
+    
+    .red{
+        list-style: none;
+    }
+    .fixed{
+        position: fixed;
+        height:80px;
+        width:80px;
+        right:10px;
+        bottom:10px;
+        background-color: #2b97a2;
+        color:white;
+        scroll-behavior: smooth;
+        border-radius: 50%;
+
+        text-decoration: none;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+
+        
+        
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="top1">
+           <h3> Get 50% off your first purchase on selected package.</h3>
+
+        </div>
+        <div class="top2">
+            <form action="" class="btna">
+                <button style="border:none"><a href="" class="bt">Enter Name</a></button>
+                <button style="border:none"><a href="" class="bt">Enter Phone</a></button>
+                <button style="border:none"><a href="" class="btn">Submit</a></button>
+            </form>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="nav1">
+            <img src="https://www.labscion.com/img/brand.png" alt="" height="40px">
+            <ul class="things">
+                <img src="https://www.labscion.com/img/call-up.png" alt="" height="20px">
+            
+                <li class="list"><a href="" clas="link">CALL : +91 8826498815</a> </a></li>
+            </ul>
+        </div>
+        <div class="nav2">
+            <ul class="things">
+                <li class="list"><a href="" class="link">Home</a></li>
+                <li class="list"><a href="" class="link">About Us</a></li>
+                <li class="list"><a href="" class="link">Blog</a></li>
+                <li class="list"><a href="" class="link">Tutorials</a></li>
+                <li class="list"><a href="" class="link">Contact Us</a></li>
+            </ul>
+            <form action="">
+                <button style="border: none;"><a href="" class="log">Log In</a></button>
+            </form>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main1">
+            <h1>Next-Gen <span style="color: #2b97a2">Lab</span>  <br>nagement System <br>for Diagnostic labs
+</h1>
+<br>
+<h2>Personalizing your Patient Experience </h2>
+<br><br><br>
+    <form action="">
+        <button style="border:none"><a href="" class="wt">Watch Video</a></button>
+        <button style="border:none"><a href="" class="bk">Book A Demo</a></button>
+  </form>
+        
+
+
+
+        </div>
+        <div class="main2">
+            <img src="https://www.labscion.com/img/homebanner.png"alt="" height="200px">
+        </div>
+    
+  </div>
+  <div class="line">
+    <h1>Trusted Eco-System For Diagnostic Labs
+</h1>
+
+ <h4>Connecting patients, labs and doctors on a single cloud-based platform</h4>
+  </div>
+   <div class="fifo_box">
+    <div class="my_fifo">
+        <img src="https://www.labscion.in/img/d-1.png" alt="" height="90px">
+        <br><br>
+      <center> <h2>Improved Patient Experience</h2> </center>
+      <br><br>
+      <ul >
+          <li class="cont">Better understanding of parameters – with graphs & analytics</li>
+          <li class="cont">24x7 access to health records of self and family</li>
+          <li class="cont">Save travel time and cost – with online test booking to receipt of report</li>
+      </ul>
+    </div>
+    <div class="my_fifo">
+        <img src="https://www.labscion.in/img/d-2.png" alt="" height="90px">
+        <br><br>
+        <h2>Efficient Lab Management</h2>
+        <br><br>
+        <ul>
+            <li class="cont">Complete process automation</li>
+            <li class="cont">Efficient sample processing and inventory control</li>
+            <li class="cont">MIS on your fingertips</li>
+        </ul>
+    </div>
+    <div class="my_fifo">
+        <img src="https://www.labscion.in/img/d-3.png" alt="" height="90px">
+        <br><br>
+        <h2>Additional Revenue Generation </h2>
+        <br><br>
+        <ul>
+            <li class="cont">Mobile and online promotion of services</li>
+            <li class="cont">Repeat revenue through timely reminders
+</li>
+            <li class="cont">Stay connected with referring doctors</li>
+        </ul>
+
+  
+    </div>
+
+   </div>
+   <div class="head">
+   <h1>Trusted Technology <span style="color:#2b97a2">Partner</span> for <span style="color:purple">100+ Labs</span>
+</h1>
+<br>
+<center><img src="https://www.labscion.com/img/check.png" alt="" height="30px"   ></center>
+<br><br>
+
+
+<center><button style="border:none"><a href="" class="wt">Be The Next One</a></button></center>
+</div>
+<div class="col">
+    <div class="col1">
+        <center><img src="https://www.labscion.com/img/mobile.png" alt=""></center>
+    </div>
+    <div class="col2">
+        <center><h1>Improve Patient Experience</h1></center>
+        <br><br>
+        <center>
+            <ul>
+                <li class="col3">Book tests online</li>
+                <li class="col3">Receive promotional offers from your lab</li>
+                <li class="col3">Better understanding of your parameters – with explanations, graphs & analytics</li>
+                <li class="col3">24x7 access to lab reports and health records of family members in one account</li>
+                <li class="col3">Store medical prescriptions, bills and other documents</li>
+                <li class="col3">Reminders for repeat tests</li>
+                <li class="col3">Recommendations for relevant tests as per age & gender</li>
+            </ul>
+            <br><br><br>
+            
+            <button  style="border:none"><a href="" class="col4">Explore Patient CRM</a></button>
+        </center>
+    </div>
+</div>
+<div class="row">
+    <div class="row1">
+        <center><img src="https://www.labscion.com/img/computer.png" alt=""></center>
+    </div>
+    <div class="row2">
+        <h1> <center>For Efficient Lab Management</center></h1>
+        <br><br>
+        <ul>
+            <center>
+            <li class="col3">Easy access to patient and test data – past & current
+</li>
+            <li class="col3">Machines integrated with software – no communication errors</li>
+            <li class="col3">All tasks managed on the software – accuracy throughout the process</li>
+            <li class="col3">Efficient sample processing through bar coding
+</li>
+           <li class="col3">Proper control on reagent purchase and their usage</li>
+           <li class="col3">Outsourced test management
+</li>
+           <li class="col3">Reduced turnaround time from order till issue of report</li>
+           
+
+
+        </ul>
+        <br><br><br>
+        </center>
+        <center>                                                            
+
+        <button style="border:none"><a href="" class="col4">Explore ROI Opportunities</a></button>
+        </center>
+    </div>
+</div>
+<div class="next">
+    <div class="nex1">
+       <center> <img src="https://www.labscion.in/img/cointree.png" alt=""></center>
+    </div>
+    <div class="next2">
+        <center><h1>Additional Revenue Generation</h1></center>
+        <br><br>
+        <ul>
+            <center>
+            <li class="col3">Online presence through templatized website</li>
+            <li class="col3">SMS and e-mail marketing, including promotional offers</li>
+            <li class="col3">Repeat test reminders with discount home collection offers
+</li>
+<li class="col3">Periodic thank you messages to referring doctors
+</li>
+<li class="col3">Issue of pre-paid digital health/loyalty/discount card</li>
+        </ul>
+        </center>
+        <br><br><br>
+        <center><button style="border:none"><a href="" class="col4">Explore ROI Opportunities</a></button></center>
+    </div>
+</div>
+<div class="call">
+   <center> <h1>Interested? Get a call back</h1> </center>
+    <br><br>
+
+   <center>
+   <h3><u>
+Enter Your Phone Number
+ 
+</u></h3>
+</center>
+<br><br><br><br>
+<center><button style="border:none"><a href="" class="back">Get A Call Back</a></button></center>
+
+   
+</div>
+<div class="report">
+    <div class="report1">
+        <u class="ful">
+            <li class="food">Fully Customized Header</li>
+            <li class="food">Barcode Scanning</li>
+            <li class="food">3 Signature Facility</li>
+            <li class="food">Multiple Option To Send Report</li>
+        </u>
+    </div>
+    <div class="report2">
+     <center>  <h1 style="color:#2b97a2">CUSTOMIZED REPORT GENERATION</h1> </center>
+        <img src="https://www.labscion.in/img/fc-header.png" alt="" height="400px">
+    </div>
+    <div class="report3">
+        <ul class="ful">
+            <li class="food">Fully Customized Footer</li>
+            <li class="food">All Case Details</li>
+            <li class="food">Whatsapp Share Option
+</li>
+<li class="food">QR Code Scanning
+</li>
+        </ul>
+    </div>
+</div>
+<br><br><br>
+<center><h1>Get started a 10-days free trial</h1></center>
+<center><h3>Get started before it is too late! All you need is a PC / Laptop / Notebook + internet connection</h3></center>
+<br><br><br>
+<center><button style="border:none"><a href="" class="cloud">Book A Demo</a></button></center>
+<div class="lg">
+    <div class="lg1">
+      <div class="lk">
+        <br><br><br>
+        <h3>Company</h3>
+        <br>
+        <h5>About Us </h5>
+        <br>
+        <h5>Contact Us</h5>
+        <br>
+        <h5>Terms & Conditions</h5>
+
+
+
+      </div>
+      <div class="lk">
+        <br><br><br>
+        <h3>Platforms</h3>
+        <br>
+        <h5>Labscion For Labs </h5>
+        <br>
+        <h5>Labscion for Patients</h5>
+        <br>
+        <h5>Labscion for Doctors</h5>
+
+
+
+      </div>
+      
+      <div class="lk">
+        <br><br><br>
+        <h3>Protected by Google</h3>
+        <br>
+        <h5>For Software Query</h5>
+        <br>
+        <h5>Privacy Policy</h5>
+        <br>
+        <h5>Terms of Service</h5>
+
+
+
+      </div>
+      <div class="lk">
+        <br><br><br>
+        <h3>Community</h3>
+        <br>
+        <h5>Blog </h5>
+      </div>
+      <div class="lk">
+        <br><br><br>
+        <h3>Contact</h3>
+        <br>
+        <h5>support@healthscion.com <br> <br>+91 882649881 B-37,<br><br> Sector-1, Noida
+</h5>
+      </div>
+    </div>
+    <div class="lg2">
+      <br>
+      <h3>© 2023. Designed & Developed by LabScion</h3>
+    </div>
+    <button><a href="" CLASS="fixed">SCROLL</a></button>
+    
+  </div>
